@@ -1,91 +1,94 @@
 <!DOCTYPE html5>
-<html>
+<html lang="en">
   <head>
     <link rel="stylesheet" href="styles.css">
-
-
   </head>
-  <header><div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">Schedule</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div></header>
-
   <body>
-<div class="padding">
-<div class="align">
+    <header>
+      <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+    </header>
 
-    <h1 id="title">松本建設会社</h1>
-    
-      <p id="description">空調設備、配管工事など</p>
-      
-  </div>
-  </div>
-<div id="background">
-    <form id="survey-form">
-    <div>
-    <p class="info">
-      <label id="name-label">氏名</label>
-    <input id="name" type="text" placeholder="フルネーム" required/><br>
-    <label id="email-label">メール</label>
-    <input id="email" type="email" placeholder="Sushi66@gmail.com" required/><br>
-    <label id="number-label">電話番号</label>
-    <input id="number" type="number" placeholder="090-0000-000" min="0" max="10"/>
-    </p><br>
-    <h4>必要なサービスをご記入ください</h4>
-    <textarea class="problem" type="text" 
-    name="problem" rows="5" cols="33" placeholder="私の家は今燃えている"/>
-</textarea>
-<br>
-      <h4>どのようにして私たちのことをお知りになりましたか？</h4>
-      <p class="how">
-    <input type="radio" name="recommend" class= inline value="友人"/>友人
-    <input type="radio" name="recommend" class= inline value="知人"/>知人
-       <input type="radio" name="recommend" class= inline value="インターネット"/>ネット
-       <input type="radio" name="recommend" class= inline value="その他"/>その他
-       </p class="where">
-       <div>
-       <label>
-       <h4>都市を選択してください</h4>
-       <label for="dropdown">
-         <select name="dropdown" id="dropdown">
-           <option value="選び" default>選び</option>
-           <option value="羽咋市">羽咋市</option>
-           <option value="白山白山">白山</option>
-           <option value="加賀市">加賀市</option>
-           <option value="かほく市">かほく市</option>
-         </select>
-</div>
-       </label>
-       </p>
-<h4>連絡を取るのに都合の良い日日は</h4>
- <input class="days" type="checkbox" value="月曜日"/> 月曜日<br>
- <input class="days" type="checkbox" value="火曜日"/> 火曜日<br>
- <input class="days" type="checkbox" value="水曜日" /> 水曜日<br>
- <input class="days" type="checkbox" value="木曜日"/> 木曜日<br>
- <input class="days" type="checkbox" value="金曜日"/> 金曜日<br>
- <input class="days" type="checkbox" value="同曜日"/> 同曜日<br>
- <input class="days" type="checkbox" value="日曜日"/> 日曜日<br>
- <h4>時間時間</h4>
-<label for="dropdown" class="inline">
-         <select name="dropdown" id="dropdown">
-           <option value="選び">選び</option>
-           <option 
-           <option value="午前8-12">午前8-12</option>
-           <option value="午後12-4">午後12-4</option>
-           <option value="午後4-8">午後4-8</option>
-         </select>
-       </label><br>
- <h4>必要なサービスをご記入ください</h4>
- <textarea class="comment" name="story" rows="5" cols="33"placeholder="エアコンを取り付けたいのですが。。"">
-</textarea>
- <br>
-<label class="inline" for="写真">写真: <input id="picture" type="file" name="file"/></label>
-<div class="submitall">
- <input type="submit" id="submit" name="submit" />
- </div>
-    </form>
-</div>
+    <div class="header-background">
+      <div class="padding">
+        <div class="align">
+          <h1 id="title">松本建設会社</h1>
+          <p id="description">空調設備、配管工事など</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="background">
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name">氏名</label>
+          <input id="name" type="text" placeholder="フルネーム" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">メール</label>
+          <input id="email" type="email" placeholder="example@mail.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="number">電話番号</label>
+          <input id="number" type="number" placeholder="090-0000-0000" />
+        </div>
+
+        <h4>必要なサービスをご記入ください</h4>
+        <textarea class="problem" name="problem" rows="5" cols="33" placeholder="私の家は今燃えている"></textarea>
+
+        <h4>どのようにして私たちのことをお知りになりましたか？</h4>
+        <p class="how">
+          <input type="radio" name="recommend" class="inline" value="友人" />友人
+          <input type="radio" name="recommend" class="inline" value="知人" />知人
+          <input type="radio" name="recommend" class="inline" value="インターネット" />ネット
+          <input type="radio" name="recommend" class="inline" value="その他" />その他
+        </p>
+
+        <div>
+          <label for="dropdown">
+            <h4>都市を選択してください</h4>
+            <select name="dropdown" id="dropdown">
+              <option value="選び" default>選び</option>
+              <option value="羽咋市">羽咋市</option>
+              <option value="白山">白山</option>
+              <option value="加賀市">加賀市</option>
+              <option value="かほく市">かほく市</option>
+            </select>
+          </label>
+        </div>
+
+        <h4>連絡を取るのに都合の良い日日は</h4>
+        <input class="days" type="checkbox" value="月曜日" /> 月曜日<br />
+        <input class="days" type="checkbox" value="火曜日" /> 火曜日<br />
+        <input class="days" type="checkbox" value="水曜日" /> 水曜日<br />
+        <input class="days" type="checkbox" value="木曜日" /> 木曜日<br />
+        <input class="days" type="checkbox" value="金曜日" /> 金曜日<br />
+        <input class="days" type="checkbox" value="同曜日" /> 同曜日<br />
+        <input class="days" type="checkbox" value="日曜日" /> 日曜日<br />
+
+        <h4>時間時間</h4>
+        <select name="dropdown" id="dropdown">
+          <option value="選び">選び</option>
+          <option value="午前8-12">午前8-12</option>
+          <option value="午後12-4">午後12-4</option>
+          <option value="午後4-8">午後4-8</option>
+        </select>
+
+        <h4>必要なサービスをご記入ください</h4>
+        <textarea class="comment" name="story" rows="5" cols="33" placeholder="エアコンを取り付けたいのですが。。"></textarea>
+        
+        <label class="inline" for="写真">写真: <input id="picture" type="file" name="file"/></label>
+        
+        <div class="submitall">
+          <input type="submit" id="submit" name="submit" />
+        </div>
+      </form>
+    </div>
   </body>
 </html>
